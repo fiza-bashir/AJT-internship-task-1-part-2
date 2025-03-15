@@ -1,0 +1,79 @@
+/* ===== Body Styling ===== */
+body {
+    background-image: url("../img/ammunition-2328695_640.jpg"); /* Sets the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    font-family: Arial, sans-serif; /* Sets the default font style */
+    background-color: transparent; /* Makes the background color transparent */
+    color: chartreuse; /* Sets the text color */
+    
+    /* Flexbox properties to position the form */
+    display: flex;
+    justify-content: start; /* Aligns content to the left side */
+    align-items: center; /* Centers content vertically */
+    
+    height: 100vh; /* Sets the height of the body to the full viewport */
+    margin: 0; /* Removes default margin */
+    padding: 2rem; /* Adds padding around the content */
+}
+
+/* ===== Form Container Styling ===== */
+.form-container {
+    background: transparent; /* Makes the container background transparent */
+    padding: 20px; /* Adds padding inside the form container */
+    border-radius: 8px; /* Rounds the corners of the form container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+
+    width: 300px; /* Sets a fixed width for the form container */
+
+    /* Gradient background with animation */
+    background: linear-gradient(45deg, red, green, blue); /* Applies a multi-color gradient */
+    background-size: 300% 300%; /* Enlarges the gradient background */
+    animation: animateBg 5s infinite alternate; /* Applies animation to the gradient */
+}
+
+/* ===== Background Animation Keyframes ===== */
+@keyframes animateBg {
+    0% { background-position: 0% 50%; } /* Starts animation from left */
+    50% { background-position: 100% 50%; } /* Moves animation to the right */
+    100% { background-position: 0% 50%; } /* Moves animation back to the left */
+}
+
+/* ===== Form Heading Styling ===== */
+h2 {
+    text-align: center; /* Centers the form title */
+}
+
+/* ===== Label Styling ===== */
+label {
+    font-weight: bold; /* Makes label text bold */
+    display: block; /* Ensures labels appear above input fields */
+    margin-top: 10px; /* Adds spacing between labels */
+}
+
+/* ===== Input Field Styling ===== */
+input {
+    width: 100%; /* Ensures input fields take full width */
+    padding: 8px; /* Adds padding inside input fields */
+    margin-top: 5px; /* Adds spacing between input fields */
+    border: 1px solid #ccc; /* Sets a light gray border */
+    border-radius: 5px; /* Rounds the corners of input fields */
+}
+
+/* ===== Button Styling ===== */
+button {
+    width: 100%; /* Ensures the button takes full width */
+    padding: 10px; /* Adds padding inside the button */
+    background: #28a745; /* Sets the button background color (green) */
+    color: white; /* Sets button text color to white */
+    border: none; /* Removes button border */
+    border-radius: 5px; /* Rounds the button corners */
+    margin-top: 15px; /* Adds spacing above the button */
+    cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+}
+
+/* ===== Button Hover Effect ===== */
+button:hover {
+    background: #218838; /* Darkens the button color on hover */
+}
